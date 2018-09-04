@@ -5,6 +5,7 @@ Tubes untuk menyelesaikan mata kuliah Implementasi Perangkat Lunak
 - [x] SKPL
 - [x] DPPL
 - [x] DDL
+- [x] DML
 - [ ] Skema Relasi
 - [ ] Normalisasi
 
