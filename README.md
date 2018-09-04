@@ -2,11 +2,11 @@
 Tubes untuk menyelesaikan mata kuliah Implementasi Perangkat Lunak
 
 # Progress List
-[v] SKPL <br/>
-[v] DPPL <br/>
-[v] DDL <br/>
-[x] Skema Relasi <br/> 
-[x] Normalisasi <br/>
+- [x] SKPL
+- [x] DPPL
+- [x] DDL
+- [ ] Skema Relasi
+- [ ] Normalisasi
 
 # Team Develop
 - Ilham Ibnu Purnomo (1301164089)
