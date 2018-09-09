@@ -17,5 +17,5 @@ Tubes untuk menyelesaikan mata kuliah Implementasi Perangkat Lunak
 - Alfian Dwirama Wanapatra (1301154415)
 
 # Spesifikasi tubes
--Database : mysql
--Bahasa   : PHP
+- Database : mysql
+- Bahasa   : PHP
