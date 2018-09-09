@@ -1,4 +1,4 @@
-# Tubes IMPAL - APOTEK
+# Tubes IMPAL - ACIM (adminitrasi Citra Mart)
 Tubes untuk menyelesaikan mata kuliah Implementasi Perangkat Lunak
 
 # Progress List
