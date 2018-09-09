@@ -15,3 +15,7 @@ Tubes untuk menyelesaikan mata kuliah Implementasi Perangkat Lunak
 - Dedy Dwianto Irwan (1301164065)
 - Azka Apta Afrizal (1301154275)
 - Alfian Dwirama Wanapatra (1301154415)
+
+# Spesifikasi tubes
+-Database : mysql
+-Bahasa   : PHP
