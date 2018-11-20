@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Nov 16, 2017 at 01:28 PM
--- Server version: 10.1.25-MariaDB
--- PHP Version: 5.6.31
+-- Host: 127.0.0.1
+-- Generation Time: Nov 20, 2018 at 10:43 AM
+-- Server version: 10.1.36-MariaDB
+-- PHP Version: 7.2.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -43,8 +43,9 @@ CREATE TABLE `barang` (
 
 INSERT INTO `barang` (`id_barang`, `nama_barang`, `stok_barang`, `harga_barang`, `tgl_kadaluarsa`, `id_supplier`) VALUES
 ('111', 'Sabun Colek', 0, 3200, '2017-11-06', 3),
-('112', 'Kondom Vortex', 30, 21312, '2017-11-18', 2),
-('113', 'Sabun Muka', 24, 14750, '2017-11-07', 2);
+('112', 'Kondom Vortex', 23, 21312, '2017-11-18', 2),
+('113', 'Sabun Muka', 23, 14750, '2017-11-07', 2),
+('114', 'Roko Sampoerna', 79, 19290, '2018-11-30', 1);
 
 -- --------------------------------------------------------
 
@@ -68,8 +69,8 @@ CREATE TABLE `karyawan` (
 --
 
 INSERT INTO `karyawan` (`id_karyawan`, `email`, `nama`, `jenis_kelamin`, `no_telp`, `alamat`, `jabatan`, `password`) VALUES
-('101', 'charly@gmail.com', 'Charly Haholongan', 'P', '08577232321', 'Cikarang Timur', 'ADMIN', 'f99aecef3d12e02dcbb6260bbdd35189c89e6e73'),
-('102', 'kukuhganteng@gmail.com', 'Kukuh Sulistyo', 'L', '08577771210', 'Cikarang Timur', 'KASIR', 'f99aecef3d12e02dcbb6260bbdd35189c89e6e73');
+('101', 'inupurnomo@outlook.com', 'Ilham Ibnu Purnomo', 'L', '085723688655', 'Kebumen', 'ADMIN', 'f99aecef3d12e02dcbb6260bbdd35189c89e6e73'),
+('102', 'devryslstyn@gmail.com', 'Devry Sulistyono', 'L', '085222333444', 'Kalimantan', 'KASIR', 'f99aecef3d12e02dcbb6260bbdd35189c89e6e73');
 
 -- --------------------------------------------------------
 
@@ -116,7 +117,9 @@ INSERT INTO `penjualan` (`id_penjualan`, `id_karyawan`, `tgl_penjualan`) VALUES
 (42, '102', '2017-11-16 19:25:16'),
 (43, '102', '2017-11-16 19:25:34'),
 (44, '102', '2017-11-16 19:26:15'),
-(45, '102', '2017-11-16 19:28:20');
+(45, '102', '2017-11-16 19:28:20'),
+(46, '102', '2018-11-13 12:16:20'),
+(47, '102', '2018-11-13 12:23:01');
 
 -- --------------------------------------------------------
 
@@ -165,7 +168,10 @@ INSERT INTO `penjualan_detail` (`id`, `id_penjualan`, `id_barang`, `jumlah`) VAL
 (34, 42, '113', 1),
 (35, 43, '113', 1),
 (36, 44, '113', 1),
-(37, 45, '113', 2);
+(37, 45, '113', 2),
+(38, 46, '112', 6),
+(39, 47, '112', 1),
+(40, 47, '113', 1);
 
 -- --------------------------------------------------------
 
@@ -231,17 +237,20 @@ ALTER TABLE `supplier`
 -- AUTO_INCREMENT for table `penjualan`
 --
 ALTER TABLE `penjualan`
-  MODIFY `id_penjualan` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id_penjualan` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+
 --
 -- AUTO_INCREMENT for table `penjualan_detail`
 --
 ALTER TABLE `penjualan_detail`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+
 --
 -- AUTO_INCREMENT for table `supplier`
 --
 ALTER TABLE `supplier`
-  MODIFY `id_supplier` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;COMMIT;
+  MODIFY `id_supplier` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
