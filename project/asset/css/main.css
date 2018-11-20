@@ -1,0 +1,113 @@
+
+@import url("partial/_dashboard.css");
+@import url("partial/_login.css");
+
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+    padding-top: 3.5rem;
+  }
+  
+  /*
+   * Typography
+   */
+  
+  h1 {
+    margin-bottom: 20px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /*
+   * Sidebar
+   */
+  
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    border-right: 1px solid #eee;
+  }
+  
+  /* Sidebar navigation */
+  .sidebar {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #424649;
+  }
+  
+  .sidebar .nav {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar .nav-item {
+    width: 100%;
+  }
+  .sidebar .nav-link.active {
+    background: #606970 !important;
+    color: white !important;
+  }
+  .sidebar .nav-item + .nav-item {
+    margin-left: 0;
+  }
+  
+  .sidebar .nav-link {
+    border-radius: 0;
+    padding-top: 
+  }
+
+  .sidebar .nav-link:not(.disabled) {
+      color: #d6d6d6;
+  }
+  .sidebar .nav-link:not(.disabled):before {
+    content: '>';
+    margin-right: 8px;
+  }
+  .sidebar .nav-link:not(.disabled):hover {
+    background: #4b5054;
+  }
+  /*
+   * Dashboard
+   */
+  
+   /* Placeholders */
+  .placeholders {
+    padding-bottom: 3rem;
+  }
+  
+  .placeholder img {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .thead-dark {
+    background: red;
+  }
+
+  #keranjang_detail .detail #harga_total,
+  #keranjang_detail .detail #kembalian {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  #keranjang .form_jumlah {
+    width: 96px;
+  }
+
+  .resi .list-group-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .resi .total {
+    border-top: 2px solid black;
+  }
