@@ -1,6 +1,6 @@
 # PROGRESS
-- ADMIN Page (80%)
-- KASIR Page (70%)
+- ADMIN Page (100%)
+- KASIR Page (100%)
 
 # Tubes IMPAL - ACIM (Adminitrasi Citra Mart)
 Tubes untuk menyelesaikan mata kuliah Implementasi Perangkat Lunak
