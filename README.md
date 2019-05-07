@@ -21,7 +21,15 @@ Tubes untuk menyelesaikan mata kuliah Implementasi Perangkat Lunak
 - Azka Apta Afrizal (1301154275)
 - Alfian Dwirama Wanapatra (1301154415)
 
-# Spesifikasi tubes
+# Spesifikasi Tubes
 - Database  : mysql
 - Bahasa    : PHP
 - Framework : Codeigniter
+
+# User
+- Admin
+  * ID : 101
+  * Password : indonesia
+- Kasir
+  * ID : 102
+  * Password : indonesia
